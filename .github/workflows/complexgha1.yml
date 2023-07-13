@@ -18,6 +18,6 @@ jobs:
     - run: date
   alljobs:
     needs: [ubuntu, windows, macos] 
-    runs-on: macos-latet
+    runs-on: macos-latest
     steps:
     - run: date
