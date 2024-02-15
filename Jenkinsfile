@@ -10,6 +10,7 @@ pipeline {
         stage('cat Readme') {
             steps {
                 sh ''' cat README.md '''
+                sh ' git log -1 HEAD --pretty=format:%s '
                 }
             }
         
