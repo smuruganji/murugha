@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Report') {
             steps {
-                sh 'echo "this is oo a report" > report.txt'
+                sh 'echo "this is oo a report" >> README.md'
                 archiveArtifacts allowEmptyArchive: true, artifacts: '*.txt', fingerprint: true, followSymlinks: false, onlyIfSuccessful: true
             }
         }
